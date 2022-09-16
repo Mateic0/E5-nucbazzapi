@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E5-Nucbazzapi</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 
 <body>
     <header>
         <img src="./assets/img/nucbazappiicon 1.png" alt="img-logo" class="logo">
+
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/img/Home.png" alt="home-icon" class="icon-home">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+
             <ul class="menu-lista">
-                <img src="./assets/img/Home.png" alt="home-icon">
+
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#Hero">Home</a>
                 </li>
                 <img src="./assets/img/cart_106649 (1).png" alt="Cart-icon">
                 <img src="./assets/img/person_user_customer_avatar_icon_141904.png" alt="icon-user">
@@ -29,12 +36,18 @@
                 <h1>Si tenes Zappi,</h1>
                 <h2>tenes Nucba</h2>
                 <p>Buscá lo que quieras y nucba te quedes sin comida.</p>
-                <a href="#">VER MÁS</a>
+                <a href="#contenedor">VER MÁS</a>
             </div>
-            <div class="hero-info2">
-                <img src="./assets/img/image 34.png" alt="img-pizza1" class="img-1">
-                <img src="./assets/img/pizza 1.png" alt="img-pizza2" class="img-2">
+            <div>
+                <div>
+                    <img src="./assets/img/image 34.png" alt="img-pizza1" class="img-1">
+                </div>
+
+                <div>
+                    <img src="./assets/img/pizza 1.png" alt="img-pizza2" class="img-2">
+                </div>
             </div>
+
         </section>
 
         <section id="contenedor-recomendacion">
@@ -100,7 +113,7 @@
         </section>
 
         <section id="productos">
-            <h2>Categorias</h2>
+            <h2>Categoriás</h2>
             <div class="contenedor-categorias">
                 <button class="categoria">
                     <img src="assets/img-icon/icon-pizza.png" alt="icono pizza">
@@ -142,8 +155,8 @@
 
         </section>
 
-        <section class="contenedor">
-            <h2>Los mas populares</h2>
+        <section id="contenedor">
+            <h2>Los más populares</h2>
             <div class="contenedor-productos">
 
                 <div class="producto">
@@ -262,8 +275,8 @@
     <footer>
         <div>
             <ul class="footer-links">
-                <li><a href="#">Terminos de uso</a></li>
-                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Términos de uso</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
                 <li><a href="#">Soporte</a>
                 <li>
             </ul>

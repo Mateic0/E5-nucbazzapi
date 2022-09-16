@@ -18,13 +18,12 @@
     list-style-type: none;
     font-family: 'Poppins', sans-serif;
     background: #131415;
-    
 }
 
 header {
     background: var(--negro);
     width: 100%;
-    height: 65px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,14 +31,28 @@ header {
     padding: 0px 30px 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
+
+    
+
 .logo {
-    margin-top: 41px;
-    margin-left: 65px;
+    height: 70px;
+    cursor: pointer;
 }
-    
-    
+
+.menu-lista {
+    cursor: pointer;
+}
+
+.menu-lista a {
+    color: var(--yellow);
+}
+
+.menu-lista a:hover {
+    color: var(--white);
+}
 
 .navbar,
 .menu-lista {
@@ -51,6 +64,12 @@ header {
     font-weight: 400;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+
+
 body {
     background: var(--color-black)
 }
@@ -58,9 +77,9 @@ body {
 #Hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
     font-style: normal;
+    margin: 80px 0px 0px 50px;
 }
 
 #Hero h1 {
@@ -83,8 +102,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-    margin: 12%;
+    gap: 15px;
 }
 
 .hero-info1 a {
@@ -98,28 +116,32 @@ body {
 }
 
 .img-1 {
-    position: absolute;
     width: 265px;
     height: 265px;
-    left: 880px;
-    top: 200px;
+    left: 750px;
+    top: 150px;
+    position: absolute;
+    background: url(./assets/img/image\ 34.png);
 }
 
 .img-2 {
-    position: absolute;
     width: 392px;
     height: 392px;
-    left: 1000px;
-    top: 90px;
+    left: 870px;
+    top: 45px;
+    position: absolute;
+    background: url(./assets/img/pizza\ 1.png);
 }
 
 
-.oferta{
+.oferta {
     display: flex;
+    justify-content:space-around;
+   
     gap: 38px;
 }
 
-.contenedor-oferta{
+.contenedor-oferta {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,24 +149,22 @@ body {
     width: 316px;
 }
 
-#contenedor-recomendacion{
+#contenedor-recomendacion {
     display: flex;
     flex-direction: column;
     background-color: var(--negro);
-    gap:30px;
+    gap: 30px;
     padding: 40px 30px;
-    
-
+    margin-top: 15px;
 }
 
-#contenedor-recomendacion h2{
-    color:var(--white);
+#contenedor-recomendacion h2 {
+    color: var(--white);
     font-weight: 500;
     font-size: 22px;
 }
 
-.recomendaciones{
-    
+.recomendaciones {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -154,31 +174,29 @@ body {
     box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
     border-radius: 15px;
     justify-content: center;
-    gap:15px
-
+    gap: 15px
 }
 
-.recomendaciones *{
+.recomendaciones * {
     background: rgba(37, 37, 37, 1);
-
 }
 
-.recomendaciones img{
+.recomendaciones img {
     height: 62px;
     width: 62px;
     border-radius: 16px;
 }
 
-.comida{
+.comida {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.boton-recomendacion{
+.boton-recomendacion {
     font-size: 12px;
     font-weight: 600;
-    background:linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     border-radius: 17px;
     padding: 5px 20px;
     border: none;
@@ -189,84 +207,77 @@ body {
     cursor: pointer;
 }
 
-.comida span{
+.comida span {
     font-size: 19px;
     font-weight: 700;
-    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);;   
-    -webkit-background-clip: text;   
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
     color: transparent;
 }
 
-.comida h3{
+.comida h3 {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 15px;
 }
 
-.comida p{
-    color:#FFFFFF;
+.comida p {
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
     opacity: 30%;
 }
 
-
-#productos{
+#productos {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 40px 30px;
 }
 
-.contenedor-categorias{
+.contenedor-categorias {
     display: flex;
     gap: 36px;
     justify-content: flex-start;
-
-    
 }
 
-
-.categoria{
+.categoria {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:var(--white);
+    color: var(--white);
     background: rgba(37, 37, 37, 1);
-    border-radius: 10px; border: none;
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
     gap: 12px;
     padding: 15px;
     font-size: 13px;
     min-width: 147px;
     height: 171px;
-   
 }
 
 
-.categoria img{
-   height:86px;
-   width: 86px;
-   background: rgba(37, 37, 37, 1);
-
+.categoria img {
+    height: 86px;
+    width: 86px;
+    background: rgba(37, 37, 37, 1);
 }
 
-#productos h2{
-    color:var(--white);
+#productos h2 {
+    color: var(--white);
     font-weight: 800;
     font-size: 15px;
 }
 
-
-.categoria:hover{
-    transform: translateY(-6px);     
+.categoria:hover {
+    transform: translateY(-6px);
     transition: transform 0.4s ease;
 }
 
-
-.contenedor{
+#contenedor {
     display: flex;
-    gap:30px;
+    gap: 30px;
     padding: 40px 30px;
     background-color: var(--negro);
     max-width: 1200px;
@@ -275,14 +286,13 @@ body {
     max-width: 100%;
 }
 
-
-.contenedor h2{
+#contenedor h2 {
     color: var(--white);
     font-weight: 500;
     font-size: 22px;
 }
 
-.contenedor-productos{
+.contenedor-productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -292,10 +302,9 @@ body {
     padding: 10px;
     min-width: 1248px;
     width: 1268px;
-
 }
 
-.producto{
+.producto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,56 +314,50 @@ body {
     width: 282px;
 }
 
-.producto *{
+.producto * {
     background: rgba(37, 37, 37, 1);
-
 }
 
-.producto-info{
+.producto-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-
 }
 
-.producto-precio{
+.producto-precio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
-    
 }
 
-.producto h3{
+.producto h3 {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 15px;
 }
 
-.producto p{
-    color:#FFFFFF;
+.producto p {
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
     opacity: 30%;
 }
 
-.producto-precio span{
+.producto-precio span {
     font-size: 19px;
     font-weight: 700;
-    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);  
-    -webkit-background-clip: text;   
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
     color: transparent;
-
-
 }
 
-
-.boton{
+.boton {
     font-size: 12px;
     font-weight: 600;
-    background:linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     border-radius: 17px;
     padding: 5px 20px;
     border: none;
@@ -362,15 +365,13 @@ body {
     color: #FFFFFF;
 }
 
-
-.producto img{
+.producto img {
     border-radius: 16px;
     Width: 237px;
     Height: 97px
 }
 
-
-.divider{
+.divider {
     background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
     box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
     border-radius: 15px;
@@ -379,54 +380,40 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     justify-content: center;
     gap: 27px;
 }
 
-footer{
+footer {
     background: rgba(19, 20, 21, 1);
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 68px;
     padding: 60px 0;
-    font-size:17px;
+    font-size: 17px;
 }
 
-.footer-links a{
-   color:rgba(255, 255, 255, 1);
+.footer-links a {
+    color: rgba(255, 255, 255, 1);
 }
 
-.footer-links a:hover{
-    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);  
-    -webkit-background-clip: text;   
+.footer-links a:hover {
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
     color: transparent;
 }
 
-footer p{
+footer p {
     color: var(--text-gray);
     font-weight: 300;
     font-size: 17px;
 }
 
-footer span{
+footer span {
     font-weight: 900;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
